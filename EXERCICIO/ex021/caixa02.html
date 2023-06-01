@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:linear-gradient(to bottom,rgb(255, 255, 255),rgb(105, 105, 143));
+            margin: 0;
+            
+
+        }
+        nav{
+            background-color: aquamarine;
+            padding: 1px;
+            box-shadow:  1px 1px 6px rgba(0, 0, 0, 0.486);
+        }
+        nav > a{
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        footer > p{
+            margin: 0;
+        }
+        article{
+            background-color: rgb(207, 228, 221);
+            padding: 5px;
+        }
+        article > aside{
+            background-image: linear-gradient(to right,rgb(136, 192, 192),rgb(207, 241, 241));
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        #assuntos{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercias web</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>ESPORTES POLITICA TECNOLOGIA</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur quibusdam voluptatum fugit voluptates quas aliquid ducimus iure nisi explicabo! Repudiandae recusandae, nisi odit corrupti corporis assumenda. Velit, soluta delectus?</p>
+                <aside>
+                    <p>Artigo escrito por M santos</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Mericas Santos</p>
+    </footer>
+</body>
+</html>

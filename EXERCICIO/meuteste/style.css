@@ -1,0 +1,18 @@
+* {
+    background-color: aqua;
+}
+p {
+    font-size: 20
+    px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 600px;
+    border: 10px 30px 20px 20px;
+    padding: 35px 20px;
+    border: rgb(22, 15, 15) solid 2px;
+
+}
+li {
+    border: solid 1px;
+    width: 90px;
+    text-decoration: none;
+}
