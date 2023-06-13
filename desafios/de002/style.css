@@ -1,93 +1,57 @@
 @charset "UTF-8";
-
-
-
-
-
-
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-
-html, body{
-    background-color: rgb(240, 220, 220);
-    max-height: 100vh;
+body{
+    background-image: url("imagens/img03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
+
 header{
-    background-color: brown;
-    
+    background-color: rgb(196, 29, 29);
     text-align: center;
-}
-header > h1{
-    padding-top: 50px;
-}
-
-header > h3{
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    border: 3px solid brown;
     
-
 }
-
-    
 
 
 section{
-    min-width: auto;
+    max-height:auto ;
+    max-width: 600px;
+    padding: 20px;
+    border:1px dotted rgba(151, 125, 125, 0.747);
     text-align: justify;
-    border-radius: 10px;
-    width: 600px;
-    height: 400px;
-    border: 1px solid;
-    padding: 10px;
-    margin: 8px;
-    box-shadow: 5px 1px 5px 2px rgba(0, 0, 0, 0.123);
-    font-family: ;
-    
-}
-    
-    
+    background-color: rgba(252, 221, 175, 0.301);
+    min-width: auto;
+    display: block;
+    background-position: center center;
+    margin: auto;
+    margin-bottom: 5px;
     
 
-
-p{
-    font-size: large;
-    font-weight: bolder;
-    font-family: ;
-}
-
-/*.p1{
-    width: 600px;
-    height: 400px;
-    border: 1px solid;
-    padding: 10px;
-    margin: 8px;
-    box-shadow: 5px 1px 5px 2px rgba(0, 0, 0, 0.123);
-}
-
-.p2{
-    width: 600px;
-    height: 400px;
-    border: 1px solid;
-    padding: 10px;
-    margin: 8px;
-    box-shadow: 5px 1px 5px 2px rgba(0, 0, 0, 0.123);
 }
 
 .p3{
-    width: 600px;
-    height: 400px;
-    border: 1px solid;
-    padding: 10px;
-    margin: 8px;
-    box-shadow: 5px 1px 5px 2px rgba(0, 0, 0, 0.123);
-}*/
+
+}
+section > h1{
+    font-size: 2.2em;
+}
+
+p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, serif;
+    font-size: 1.3em;
+}
 footer{
-    background-color: brown;
+    background-color:rgb(196, 29, 29) ;
     text-align: center;
-    padding: 20px;
-    font-weight: bolder;
+    padding: 40px;
+    font-weight: bold;
 }
