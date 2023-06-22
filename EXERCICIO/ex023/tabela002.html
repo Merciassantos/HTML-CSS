@@ -7,10 +7,23 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
         }
         table{
             width: 520px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(150, 247, 214, 0.301);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: aquamarine;
         }
 
         td, th{
@@ -21,7 +34,22 @@
         .cabeça{
             background-color: aquamarine;
         }
+        /*td{
+            background-color: rgb(219, 215, 215);
+        }*/
+
+        td.num{
+            text-align: right;
+        }
         
+        td.porcento{
+            text-align: right;
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(219, 215, 215);
+        }
+
          
     </style>
 </head>
@@ -29,6 +57,7 @@
     <h1>Uso de tabelas grande</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -38,176 +67,177 @@
            -->
 
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr class="cabeça">
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop.total</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop.total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>São Paulo</td>
-                <td>46 024 937</td>
-                <td>22,2%</td>
+                <td class="num">46 024 937</td>
+                <td class="porcento">22,2%</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Minas Gerais</td>
-                <td>20 732 660</td>
-                <td>10,0%</td>
+                <td class="num">20 732 660</td>
+                <td class="porcento">10,0%</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Rio de janeiro</td>
-                <td>16 615 526</td>
-                <td>8,0%</td>
+                <td class="num">16 615 526</td>
+                <td class="porcento">8,0%</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Bahia</td>
-                <td>14 659 023</td>
-                <td>7,1%</td>
+                <td class="num">14 659 023</td>
+                <td class="porcento">7,1%</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Paraná</td>
-                <td>11 835 023</td>
-                <td>5,7%</td>
+                <td class="num">11 835 023</td>
+                <td class="porcento">5,7%</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>Rio Grande do Sul</td>
-                <td>11 088 065</td>
-                <td>5,3%</td>
+                <td class="num">11 088 065</td>
+                <td class="porcento">5,3%</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>Pernambuco</td>
-                <td>9 051 113</td>
-                <td>4,4%</td>
+                <td class="num">9 051 113</td>
+                <td class="porcento">4,4%</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>Ceará</td>
-                <td>8 936 431</td>
-                <td>4,3%</td>
+                <td class="num">8 936 431</td>
+                <td class="porcento">4,3%</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>Pará</td>
-                <td>8 442 962 </td>
-                <td>4,1%</td>
+                <td class="num">8 442 962 </td>
+                <td class="porcento">4,1%</td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>Santa Catarina</td>
-                <td>7 762 154</td>
-                <td>3,7%</td>
+                <td class="num">7 762 154</td>
+                <td class="porcento">3,7%</td>
             </tr>
             <tr>
                 <td>11</td>
                 <td>Goiás</td>
-                <td>6 950 976</td>
-                <td>3,3%</td>
+                <td class="num">6 950 976</td>
+                <td class="porcento">3,3%</td>
             </tr>
             <tr>
                 <td>12</td>
                 <td>Maranhão</td>
-                <td>6 800 605</td>
-                <td>3,3%</td>
+                <td class="num">6 800 605</td>
+                <td class="porcento">3,3%</td>
             </tr>
             <tr>
                 <td>13</td>
                 <td>Espírito Santo</td>
-                <td>4 108 508</td>
-                <td>1,9%</td>
+                <td class="num">4 108 508</td>
+                <td class="porcento">1,9%</td>
             </tr>
             <tr>
                 <td>14</td>
                 <td>Paraíba</td>
-                <td>4 030 961</td>
-                <td>1,9%</td>
+                <td class="num">4 030 961</td>
+                <td class="porcento">1,9%</td>
             </tr>
             <tr>
                 <td>15</td>
                 <td>Amazonas</td>
-                <td>3 952 262</td>
-                <td>1,9%</td>
+                <td class="num">3 952 262</td>
+                <td class="porcento">1,9%</td>
             </tr>
             <tr>
                 <td>16</td>
                 <td>Mato Grosso</td>
-                <td>3 784 239</td>
-                <td>1,8%</td>
+                <td class="num">3 784 239</td>
+                <td class="porcento">1,8%</td>
             </tr>
             <tr>
                 <td>17</td>
                 <td>Rio Grande do Norte</td>
-                <td>3 303 953</td>
-                <td>1,6%</td>
+                <td class="num">3 303 953</td>
+                <td class="porcento">1,6%</td>
             </tr>
             <tr>
                 <td>18</td>
                 <td>Piauí</td>
-                <td>3 270 174</td>
-                <td>1,6%</td>
+                <td class="num">3 270 174</td>
+                <td class="porcento">1,6%</td>
             </tr>
             <tr>
                 <td>19</td>
                 <td>Alagoas</td>
-                <td>3 125 254</td>
-                <td>1,5%</td>
+                <td class="num">3 125 254</td>
+                <td class="porcento">1,5%</td>
             </tr>
             <tr>
                 <td>20</td>
                 <td>Distrito Federal</td>
-                <td>2 923 369</td>
-                <td>1,4%</td>
+                <td class="num">2 923 369</td>
+                <td class="porcento">1,4%</td>
             </tr>
             <tr>
                 <td>21</td>
                 <td>Mato Grosso do Sul</td>
-                <td>2 833 742</td>
-                <td>1,4% </td>
+                <td class="num">2 833 742</td>
+                <td class="porcento">1,4% </td>
             </tr>
             <tr>
                 <td>22</td>
                 <td>Sergipe</td>
-                <td>2 211 868</td>
-                <td>1,1%</td>
+                <td class="num">2 211 868</td>
+                <td class="porcento">1,1%</td>
             </tr>
             <tr>
                 <td>23</td>
                 <td>Rondônia</td>
-                <td>1 616 379</td>
-                <td>0,8%</td>
+                <td class="num">1 616 379</td>
+                <td class="porcento">0,8%</td>
             </tr>
             <tr>
                 <td>24</td>
                 <td>Tocantins</td>
-                <td>1 584 306</td>
-                <td>0,8%</td>
+                <td class="num">1 584 306</td>
+                <td class="porcento">0,8%</td>
             </tr>
             <tr>
                 <td>25</td>
                 <td>Acre</td>
-                <td>829 780</td>
-                <td>0,4%</td>
+                <td class="num">829 780</td>
+                <td class="porcento">0,4%</td>
             </tr>
             <tr>
                 <td>26</td>
                 <td>Amapá</td>
-                <td>774 268</td>
-                <td>0,4%</td>
+                <td class="num">774 268</td>
+                <td class="porcento">0,4%</td>
             </tr>
             <tr>
                 <td>27</td>
                 <td>Roraima</td>
-                <td>634 805</td>
-                <td>0,3%</td>
+                <td class="num">634 805</td>
+                <td class="porcento">0,3%</td>
             </tr>
         </tbody>
         <tfoot>
@@ -217,5 +247,10 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquam quisquam eius eveniet similique cupiditate suscipit! Fuga eius optio est aliquam libero quisquam soluta non numquam enim, eum iure nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque laudantium in deserunt dolore nesciunt neque aliquam. Asperiores, quasi. Pariatur sequi porro blanditiis laudantium vel ullam omnis deleniti, commodi adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et eos temporibus rerum recusandae corrupti voluptatem quo, iusto cupiditate optio libero minus in atque esse officia enim vitae delectus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, magnam eum similique commodi, deleniti distinctio necessitatibus tempore labore numquam, quaerat autem eos debitis facilis sapiente molestiae id possimus? Maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquam quisquam eius eveniet similique cupiditate suscipit! Fuga eius optio est aliquam libero quisquam soluta non numquam enim, eum iure nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque laudantium in deserunt dolore nesciunt neque aliquam. Asperiores, quasi. Pariatur sequi porro blanditiis laudantium vel ullam omnis deleniti, commodi adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et eos temporibus rerum recusandae corrupti voluptatem quo, iusto cupiditate optio libero minus in atque esse officia enim vitae delectus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, magnam eum similique commodi, deleniti distinctio necessitatibus tempore labore numquam, quaerat autem eos debitis facilis sapiente molestiae id possimus? Maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquam quisquam eius eveniet similique cupiditate suscipit! Fuga eius optio est aliquam libero quisquam soluta non numquam enim, eum iure nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque laudantium in deserunt dolore nesciunt neque aliquam. Asperiores, quasi. Pariatur sequi porro blanditiis laudantium vel ullam omnis deleniti, commodi adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et eos temporibus rerum recusandae corrupti voluptatem quo, iusto cupiditate optio libero minus in atque esse officia enim vitae delectus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, magnam eum similique commodi, deleniti distinctio necessitatibus tempore labore numquam, quaerat autem eos debitis facilis sapiente molestiae id possimus? Maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquam quisquam eius eveniet similique cupiditate suscipit! Fuga eius optio est aliquam libero quisquam soluta non numquam enim, eum iure nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque laudantium in deserunt dolore nesciunt neque aliquam. Asperiores, quasi. Pariatur sequi porro blanditiis laudantium vel ullam omnis deleniti, commodi adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et eos temporibus rerum recusandae corrupti voluptatem quo, iusto cupiditate optio libero minus in atque esse officia enim vitae delectus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, magnam eum similique commodi, deleniti distinctio necessitatibus tempore labore numquam, quaerat autem eos debitis facilis sapiente molestiae id possimus? Maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aliquam quisquam eius eveniet similique cupiditate suscipit! Fuga eius optio est aliquam libero quisquam soluta non numquam enim, eum iure nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque laudantium in deserunt dolore nesciunt neque aliquam. Asperiores, quasi. Pariatur sequi porro blanditiis laudantium vel ullam omnis deleniti, commodi adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et eos temporibus rerum recusandae corrupti voluptatem quo, iusto cupiditate optio libero minus in atque esse officia enim vitae delectus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, magnam eum similique commodi, deleniti distinctio necessitatibus tempore labore numquam, quaerat autem eos debitis facilis sapiente molestiae id possimus? Maxime!</p>
 </body>
 </html>
