@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela06</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th,td{
+            width: 100px;
+            border: 1px solid black;
+            font-weight: bold;
+            
+        }
+        .cabeça{
+            background-color: darkgray;
+            font-weight: bolder;
+            color: white;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        
+        <tbody>
+            <tr>
+                <th rowspan="2" class="cabeça" scope="col">Ária</th>
+                <th rowspan="2" class="cabeça" scope="col">Disciplina</th>
+                <th colspan="2" class="cabeça" scope="colgroup">Notas</th>
+                
+                <th rowspan="2" class="cabeça" scope="col">Média</th>
+            </tr>
+            <tr>
+                
+                
+                <th class="cabeça" scope="col">Nota1</th>
+                <th class="cabeça" scope="col">Nota2</th>
+                
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>9.0</td>
+                <td>7.8</td>
+                <td>16.80</td>
+            </tr>
+            <tr>
+                
+                <td>Física</td>
+                <td>10</td>
+                <td>10</td>
+                <td>20,00</td>
+            </tr>
+            <tr>
+                
+                <td>Química</td>
+                <td>8,0</td>
+                <td>7,0</td>
+                <td>15,00</td>
+            </tr>
+            <tr>
+            
+                <td>Biologia</td>
+                <td>9,0</td>
+                <td>8,5</td>
+                <td>17,50</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cabeça">Média Total de Exatas</td>
+                <td class="cabeça">69,30</td>
+
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup.">Humanas</th>
+                <td>Hístória</td>
+                <td>8,0</td>
+                <td>9,0</td>
+                <td>17,00</td>
+            </tr>
+            <tr>
+                
+                <td>Geografia</td>
+                <td>6,0</td>
+                <td>7,0</td>
+                <td>13,00</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cabeça">Média Total de Humanas</td>
+                <td class="cabeça">30,00</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
