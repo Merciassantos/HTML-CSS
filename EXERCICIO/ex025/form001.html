@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formuário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend><h3>DADOS PESSOAIS</h3></legend>
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="3"maxlength="12" size="10" placeholder="Nome do usuário" autocomplete="username">
+            </p>
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="30" placeholder="Sobrenome do usuário" autocomplete="username"></p>
+            <p>
+                <label for="iemail">email</label>
+                <input type="email" name="email" id="iemail" required placeholder="email do usuario" autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">telefone</label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" placeholder="EX:(71)99999-9999" maxlength="13">
+            
+            </p>
+            <p>
+                <label for="imedia">média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"required>
+            </p>
+            <p>
+                <label for="idata">data</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for=""></label>
+            </p>
+            <p><label for="imes">periodo letivo</label>
+                <input type="month" name="mes" id="imes">
+            
+            </p>
+            <p>
+                <label for="ihora">hora</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="isan">Senha:</label>
+                <input type="password" name="san" id="isan" required minlength="8" maxlength="16" placeholder="Ex:mns548*/&%$D" autocomplete="current-password">
+            </p>
+        </fieldset>
+            <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+            </p>
+    
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic deleniti aspernatur porro nemo. Numquam nisi laudantium facere, quaerat aut sequi error et, earum odit iste quidem dolore incidunt, neque perspiciatis?</p>
+    </form>
+</body>
+</html>
