@@ -29,7 +29,7 @@ section#login {
     background-color: white;
     width: 252px;
     height: 510px;
-    margin: auto;
+    max-height: auto;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
     transition: width .2s, height .2s;
