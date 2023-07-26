@@ -41,6 +41,7 @@ section#login > div#imagem {
     display: block;
     background: #4444e9 url(../imag/pexels.jpg);
     height: 200px;
+    min-height: auto;
     background-size: cover;
 }
 
